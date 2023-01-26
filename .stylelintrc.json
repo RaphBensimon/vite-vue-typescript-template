@@ -1,0 +1,23 @@
+{
+	"extends": ["stylelint-config-standard", "stylelint-config-recommended-vue"],
+	"rules": {
+		"indentation": "tab",
+		"import-notation": "string",
+		"rule-empty-line-before": "never",
+		"at-rule-no-unknown": null,
+		"no-descending-specificity": null,
+		"selector-max-compound-selectors": 6,
+		"max-nesting-depth": [0, {
+			"ignore": ["pseudo-classes"], 
+			"ignoreAtRules": ["/^if/", "/^else/"]
+			}
+		],
+		"selector-max-id": 2,
+		"selector-pseudo-element-colon-notation": "single",
+		"string-quotes": "single",
+		"color-hex-length": "long",
+		"selector-pseudo-class-no-unknown": [true, {
+			"ignorePseudoClasses": ["/^deep/"]
+		}]
+	}
+}
